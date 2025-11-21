@@ -119,7 +119,7 @@ export class HomeContentStore {
           tagline: 'Your Digital Home, Perfected',
         },
         {
-          title: 'Hum Academy',
+          title: 'Object Canvas Academy',
           icon: '🎓',
           description:
             'Future-ready tech education with live cohorts, real-world projects, and mentorship from industry leaders.',
@@ -185,10 +185,10 @@ export class HomeContentStore {
           tagline: 'Bringing Your Photos to Life',
         },
       ],
-    },  
+    },
     differentiators: {
       header: {
-        eyebrow: 'Why Hum Tech & Academy',
+        eyebrow: 'Why Object Canvas Technology',
         title: 'Why Leading Companies Choose Us',
         subtitle:
           'End-to-end partnership, measurable outcomes, and a commitment to the teams who rely on our solutions every day.',
@@ -222,14 +222,14 @@ export class HomeContentStore {
         {
           title: 'Beyond Delivery',
           description:
-            'We empower your team with upskilling and internal enablement through Hum Academy programs.',
+            'We empower your team with upskilling and internal enablement through Object Canvas Academy programs.',
         },
       ],
       partnershipPanel: {
         eyebrow: 'Partnership DNA',
         title: 'Strategy, build, enablement and continuous optimization—one integrated team.',
         description:
-          'We embed with your teams, align KPIs, and share knowledge through Hum Academy so you stay in control long after launch.',
+          'We embed with your teams, align KPIs, and share knowledge through Object Canvas Academy so you stay in control long after launch.',
         highlights: [
           { label: 'Dedicated PMO', value: 'Weekly sprints & dashboards' },
           { label: 'Academy Enablement', value: 'Workshops & certifications' },
@@ -302,8 +302,8 @@ export class HomeContentStore {
     },
     academy: {
       header: {
-        eyebrow: 'Hum Academy',
-        title: 'Hum Academy: Learn Technology, Build Careers',
+        eyebrow: 'Object Canvas Academy',
+        title: 'Object Canvas Academy: Learn Technology, Build Careers',
         subtitle: 'Live online courses taught by industry experts. From beginner to professional.',
       },
       categories: [
@@ -382,7 +382,7 @@ export class HomeContentStore {
       items: [
         {
           quote:
-            'Hum Tech transformed our digital presence and unified our customer journey across markets. Their strategy and execution rival the best global agencies.',
+            'Object Canvas Technology transformed our digital presence and unified our customer journey across markets. Their strategy and execution rival the best global agencies.',
           name: 'Arif Khan',
           title: 'Chief Digital Officer, Aarong Global',
           location: 'Dhaka & Dubai',
@@ -400,7 +400,7 @@ export class HomeContentStore {
         },
         {
           quote:
-            'Hum Academy’s DevOps bootcamp helped me transition from support engineer to cloud engineer in under six months with real mentorship.',
+            'Object Canvas Academy’s DevOps bootcamp helped me transition from support engineer to cloud engineer in under six months with real mentorship.',
           name: 'Mahim Islam',
           title: 'Cloud Engineer, Sydney',
           location: 'Sydney, Australia',
@@ -446,7 +446,7 @@ export class HomeContentStore {
           title: 'Designing Omni-Channel Experiences for Emerging Markets',
           category: 'Case Study',
           summary:
-            'How Hum Tech reimagined retail experiences with localized content and automation.',
+            'How Object Canvas Technology reimagined retail experiences with localized content and automation.',
           readTime: '7 min read',
         },
         {
@@ -478,7 +478,7 @@ export class HomeContentStore {
       academy: {
         title: 'Ready to Advance Your Career?',
         description:
-          'Enroll in Hum Academy programs to upgrade your skills with mentorship from industry practitioners.',
+          'Enroll in Object Canvas Academy programs to upgrade your skills with mentorship from industry practitioners.',
         cta: {
           label: 'Browse Courses',
           routerLink: '/academy',
@@ -491,7 +491,7 @@ export class HomeContentStore {
         title: "Let's Build Something Amazing Together",
         subtitle: 'Tell us about your goals and we will curate a dedicated team for you.',
       },
-      headquarters: 'Hum Tech & Academy, 123 Innovation Avenue, Tejgaon, Dhaka 1207',
+      headquarters: 'Object Canvas Technology, 123 Innovation Avenue, Tejgaon, Dhaka 1207',
       phones: ['Bangladesh: +880 1234-567890', 'International: +1 415-555-0198'],
       emails: [
         { label: 'Business', value: 'hello@humtech.academy' },

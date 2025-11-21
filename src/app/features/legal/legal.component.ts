@@ -13,7 +13,7 @@ const LEGAL_CONTENT: Record<string, LegalCopy> = {
   privacy: {
     title: 'Privacy Policy',
     intro:
-      'We respect your privacy and comply with global data protection regulations. This summary outlines how Hum Tech & Academy collects, processes, and safeguards information.',
+      'We respect your privacy and comply with global data protection regulations. This summary outlines how Object Canvas Technology collects, processes, and safeguards information.',
     sections: [
       {
         heading: 'Data Collection & Usage',
@@ -30,7 +30,7 @@ const LEGAL_CONTENT: Record<string, LegalCopy> = {
   terms: {
     title: 'Terms of Service',
     intro:
-      'By partnering with Hum Tech & Academy, you agree to the following terms governing engagements, intellectual property, and payment schedules.',
+      'By partnering with Object Canvas Technology, you agree to the following terms governing engagements, intellectual property, and payment schedules.',
     sections: [
       {
         heading: 'Engagement Model',
@@ -40,7 +40,7 @@ const LEGAL_CONTENT: Record<string, LegalCopy> = {
       {
         heading: 'Intellectual Property',
         body:
-          'Upon full payment, all custom work product is transferred to the client. Hum Tech retains rights to internal tooling and accelerators used in delivery.'
+          'Upon full payment, all custom work product is transferred to the client. Object Canvas Technology retains rights to internal tooling and accelerators used in delivery.'
       }
     ]
   },
