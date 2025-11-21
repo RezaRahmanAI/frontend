@@ -49,7 +49,7 @@ export class ServicesComponent {
       outcomes: [
         'Accelerated launches with agile delivery and automation',
         'Battle-tested architecture prepared for scale and compliance',
-        'Knowledge transfer to internal teams via Hum Academy enablement'
+        'Knowledge transfer to internal teams via Object Canvas Academy enablement'
       ]
     },
     {

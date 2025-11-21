@@ -33,7 +33,7 @@ export class InsightsComponent {
       readTime: '6 min read'
     },
     {
-      title: 'Upskilling Product Teams with Hum Academy',
+      title: 'Upskilling Product Teams with Object Canvas Academy',
       category: 'Learning',
       excerpt: 'Playbooks for aligning training roadmaps with product delivery to reduce onboarding time and talent gaps.',
       readTime: '5 min read'
