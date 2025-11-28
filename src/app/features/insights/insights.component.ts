@@ -16,27 +16,30 @@ interface InsightEntry {
   imports: [CommonModule, SectionHeaderComponent, ScrollRevealDirective],
   templateUrl: './insights.component.html',
   styleUrl: './insights.component.css',
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class InsightsComponent {
   protected readonly entries: InsightEntry[] = [
     {
       title: 'Building Global Platforms from Bangladesh',
       category: 'Thought Leadership',
-      excerpt: 'How distributed squads, lean experimentation, and academy enablement power our multinational partnerships.',
-      readTime: '8 min read'
+      excerpt:
+        'How distributed squads, lean experimentation, and academy enablement power our multinational partnerships.',
+      readTime: '8 min read',
     },
     {
       title: 'Designing Inclusive Digital Services',
       category: 'Experience Design',
-      excerpt: 'Practical accessibility, localization, and performance strategies for public sector portals and citizen services.',
-      readTime: '6 min read'
+      excerpt:
+        'Practical accessibility, localization, and performance strategies for public sector portals and citizen services.',
+      readTime: '6 min read',
     },
     {
-      title: 'Upskilling Product Teams with Object Canvas Academy',
+      title: 'Upskilling Product Teams with HumTech Academy',
       category: 'Learning',
-      excerpt: 'Playbooks for aligning training roadmaps with product delivery to reduce onboarding time and talent gaps.',
-      readTime: '5 min read'
-    }
+      excerpt:
+        'Playbooks for aligning training roadmaps with product delivery to reduce onboarding time and talent gaps.',
+      readTime: '5 min read',
+    },
   ];
 }

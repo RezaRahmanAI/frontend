@@ -22,7 +22,7 @@ export const routes: Routes = [
     path: 'academy',
     loadComponent: () =>
       import('./features/academy/academy.component').then((m) => m.AcademyComponent),
-    title: 'Object Canvas Academy | Live Technology Courses',
+    title: 'HumTech Academy | Live Technology Courses',
   },
   {
     path: 'portfolio',

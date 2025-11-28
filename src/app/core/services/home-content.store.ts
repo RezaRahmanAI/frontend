@@ -113,7 +113,7 @@ export class HomeContentStore {
           tagline: 'Your Digital Home, Perfected',
         },
         {
-          title: 'Object Canvas Academy',
+          title: 'HumTech Academy',
           icon: '🎓',
           description:
             'Future-ready tech education with live cohorts, real-world projects, and mentorship from industry leaders.',
@@ -216,14 +216,14 @@ export class HomeContentStore {
         {
           title: 'Beyond Delivery',
           description:
-            'We empower your team with upskilling and internal enablement through Object Canvas Academy programs.',
+            'We empower your team with upskilling and internal enablement through HumTech Academy programs.',
         },
       ],
       partnershipPanel: {
         eyebrow: 'Partnership DNA',
         title: 'Strategy, build, enablement and continuous optimization—one integrated team.',
         description:
-          'We embed with your teams, align KPIs, and share knowledge through Object Canvas Academy so you stay in control long after launch.',
+          'We embed with your teams, align KPIs, and share knowledge through HumTech Academy so you stay in control long after launch.',
         highlights: [
           { label: 'Dedicated PMO', value: 'Weekly sprints & dashboards' },
           { label: 'Academy Enablement', value: 'Workshops & certifications' },
@@ -296,8 +296,8 @@ export class HomeContentStore {
     },
     academy: {
       header: {
-        eyebrow: 'Object Canvas Academy',
-        title: 'Object Canvas Academy: Learn Technology, Build Careers',
+        eyebrow: 'HumTech Academy',
+        title: 'HumTech Academy: Learn Technology, Build Careers',
         subtitle: 'Live online courses taught by industry experts. From beginner to professional.',
       },
       categories: [
@@ -394,7 +394,7 @@ export class HomeContentStore {
         },
         {
           quote:
-            'Object Canvas Academy’s DevOps bootcamp helped me transition from support engineer to cloud engineer in under six months with real mentorship.',
+            'HumTech Academy’s DevOps bootcamp helped me transition from support engineer to cloud engineer in under six months with real mentorship.',
           name: 'Mahim Islam',
           title: 'Cloud Engineer, Sydney',
           location: 'Sydney, Australia',
@@ -472,7 +472,7 @@ export class HomeContentStore {
       academy: {
         title: 'Ready to Advance Your Career?',
         description:
-          'Enroll in Object Canvas Academy programs to upgrade your skills with mentorship from industry practitioners.',
+          'Enroll in HumTech Academy programs to upgrade your skills with mentorship from industry practitioners.',
         cta: {
           label: 'Browse Courses',
           routerLink: '/academy',

@@ -36,7 +36,7 @@ import { HomeTrustService } from './services/home-trust.service';
     AcademySectionComponent,
     GlobalPresenceSectionComponent,
     TestimonialsSectionComponent,
-    ImpactSectionComponent,
+    // ImpactSectionComponent,
     ClosingCtasSectionComponent,
     ContactSectionComponent,
   ],

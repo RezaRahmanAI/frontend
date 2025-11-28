@@ -16,7 +16,7 @@ interface ServiceDetail {
   imports: [CommonModule, SectionHeaderComponent, ScrollRevealDirective],
   templateUrl: './services.component.html',
   styleUrl: './services.component.css',
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ServicesComponent {
   protected readonly categories: ServiceDetail[] = [
@@ -28,13 +28,13 @@ export class ServicesComponent {
         'Global SEO and content operations',
         'Paid media management (Google, Meta, LinkedIn, TikTok)',
         'Marketing automation & CRM integration',
-        'Brand strategy, messaging, and creative production'
+        'Brand strategy, messaging, and creative production',
       ],
       outcomes: [
         '3x average uplift in qualified leads',
         '40% improvement in multi-touch attribution accuracy',
-        'Consistent brand voice across all regions'
-      ]
+        'Consistent brand voice across all regions',
+      ],
     },
     {
       name: 'Software & Product Engineering',
@@ -44,13 +44,13 @@ export class ServicesComponent {
         'Product discovery, UX research, and service design',
         'Full-stack development with Angular, React, Node.js, Python, Go',
         'Mobile apps (Flutter, Swift, Kotlin, React Native)',
-        'DevOps, CI/CD, observability, and managed cloud'
+        'DevOps, CI/CD, observability, and managed cloud',
       ],
       outcomes: [
         'Accelerated launches with agile delivery and automation',
         'Battle-tested architecture prepared for scale and compliance',
-        'Knowledge transfer to internal teams via Object Canvas Academy enablement'
-      ]
+        'Knowledge transfer to internal teams via HumTech Academy enablement',
+      ],
     },
     {
       name: 'Experience Design & Websites',
@@ -60,13 +60,13 @@ export class ServicesComponent {
         'Customer journey mapping and UX/UI design systems',
         'Corporate websites, landing pages, and e-commerce experiences',
         'Headless CMS and Jamstack implementations',
-        'Accessibility, localization, and performance optimization'
+        'Accessibility, localization, and performance optimization',
       ],
       outcomes: [
         'Higher conversion rates with optimized user flows',
         'Design systems that scale across products and regions',
-        'A/B testing frameworks and analytics dashboards'
-      ]
-    }
+        'A/B testing frameworks and analytics dashboards',
+      ],
+    },
   ];
 }

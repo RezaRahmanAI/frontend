@@ -15,6 +15,11 @@
         <div class="mt-6 flex flex-wrap gap-3 text-xs font-semibold uppercase tracking-wide text-slate-500">
           <span *ngFor="let tag of item.tags" class="rounded-full bg-slate-100 px-3 py-1">{{ tag }}</span>
         </div>
+        <div class="mt-4">
+          <p class="text-xs text-slate-500">Contact: {{ item.contact }}</p>
+          <p class="text-xs text-slate-500">Email: <a [href]="'mailto:' + item.email" class="text-primary">{{ item.email }}</a></p>
+          <p *ngIf="item.website" class="text-xs text-slate-500">Website: <a [href]="item.website" class="text-primary" target="_blank">{{ item.website }}</a></p>
+        </div>
       </article>
     </div>
   </div>

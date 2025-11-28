@@ -9,6 +9,9 @@ interface PortfolioItem {
   region: string;
   summary: string;
   tags: string[];
+  contact: string;
+  email: string;
+  website: string;
 }
 
 @Component({
@@ -17,41 +20,51 @@ interface PortfolioItem {
   imports: [CommonModule, SectionHeaderComponent, ScrollRevealDirective],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.css',
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PortfolioComponent {
   protected readonly work: PortfolioItem[] = [
     {
-      title: 'Retail Reimagined with Aarong Global',
-      client: 'Aarong Global',
-      region: 'Dhaka · Dubai',
+      title: 'PhysioZen',
+      client: 'PhysioZen',
+      region: 'Dhaka, Bangladesh',
       summary:
-        'Unified e-commerce platform, localized content operations, and omnichannel analytics delivering 250% revenue growth.',
-      tags: ['E-commerce', 'UX/UI', 'SEO', 'Marketing Automation']
+        'Premium Physiotherapy and Wellness Center in the Heart of Dhaka. A Healthy Body is A Happy Life.',
+      tags: ['Physiotherapy', 'Wellness', 'Medical & Health'],
+      contact: '01711-404012',
+      email: 'physiozenbd@gmail.com',
+      website: '',
     },
     {
-      title: 'Velocity Fintech Developer Platform',
-      client: 'Velocity Fintech',
-      region: 'Singapore · London',
+      title: 'Macro Health Plus',
+      client: 'Macro Health Plus',
+      region: 'Dhaka, Bangladesh',
       summary:
-        'API marketplace, developer portal, and compliance automation enabling expansion into five new markets in under 12 months.',
-      tags: ['Fintech', 'APIs', 'Microservices', 'DevOps']
+        'Healthcare practice and management solutions for doctors, patients, hospitals, diagnostics, and pharmacies.',
+      tags: ['Healthcare', 'Medical Solutions', 'Practice Management'],
+      contact: '01855-777766',
+      email: 'info@macrohealthplus.org',
+      website: 'https://www.linkedin.com/company/macrohealthplus',
     },
     {
-      title: 'Healthtech Telemedicine Experience',
-      client: 'NovaCare Health',
-      region: 'Sydney · Kuala Lumpur',
-      summary:
-        'HIPAA-compliant telehealth apps with AI triage, improving patient satisfaction to 4.9/5 and reducing support tickets by 63%.',
-      tags: ['Healthcare', 'Mobile Apps', 'AI Assistant', 'Compliance']
+      title: 'Haveiis',
+      client: 'Haveiis',
+      region: 'Gulshan-1, Dhaka, Bangladesh',
+      summary: 'Own what you wear! Clothing brand with a focus on style and quality.',
+      tags: ['Clothing', 'Fashion', 'Brand'],
+      contact: '01799-193004',
+      email: 'info@haveiis.com',
+      website: 'http://haveiis.com',
     },
     {
-      title: 'Government Digital Services in Bangladesh',
-      client: 'GovTech Bangladesh',
-      region: 'Dhaka',
-      summary:
-        'Citizen-first portal with multilingual support, accessibility, and data dashboards serving 12M monthly visits.',
-      tags: ['Public Sector', 'Accessibility', 'Localization', 'Data Visualization']
-    }
+      title: 'GMT-Green Max Travel',
+      client: 'GMT-Green Max Travel',
+      region: 'Shantinagar, Dhaka, Bangladesh',
+      summary: 'One Stop Solution for your travel needs. Make your Premium Choice.',
+      tags: ['Travel', 'Tour Agent', 'Visa Services'],
+      contact: '01711-840314',
+      email: 'info@greenmaxbd.com',
+      website: 'http://greenmaxbd.com',
+    },
   ];
 }
