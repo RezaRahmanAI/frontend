@@ -1,13 +1,7 @@
 import { Injectable, computed, inject, signal } from '@angular/core';
 import { take } from 'rxjs';
 
-import {
-  HomeContent,
-  InsightItem,
-  ServiceCard,
-  StatItem,
-  Testimonial,
-} from '../models/home';
+import { HomeContent, InsightItem, ServiceCard, StatItem, Testimonial } from '../models/home';
 import { ContentApiService } from './content-api.service';
 
 @Injectable({ providedIn: 'root' })
@@ -64,10 +58,10 @@ export class HomeContentStore {
       tagline: 'Trusted by teams at',
       companies: ['Anthropic', 'Stripe', 'Vercel', 'Linear'],
       stats: [
-        { label: 'Projects Delivered', value: 500, suffix: '+' },
-        { label: 'Countries Served', value: 50, suffix: '+' },
-        { label: 'Students Trained', value: 10, suffix: 'K+' },
-        { label: 'Years Combined Experience', value: 15, suffix: '+' },
+        { label: 'Projects Delivered', value: 50, suffix: '+' },
+        { label: 'Countries Served', value: 1, suffix: '+' },
+        { label: 'Students Trained', value: 1, suffix: 'K+' },
+        { label: 'Years Combined Experience', value: 2, suffix: '+' },
       ],
     },
     services: {
@@ -188,7 +182,7 @@ export class HomeContentStore {
     },
     differentiators: {
       header: {
-        eyebrow: 'Why Object Canvas Technology',
+        eyebrow: 'Why HumTech',
         title: 'Why Leading Companies Choose Us',
         subtitle:
           'End-to-end partnership, measurable outcomes, and a commitment to the teams who rely on our solutions every day.',
@@ -382,7 +376,7 @@ export class HomeContentStore {
       items: [
         {
           quote:
-            'Object Canvas Technology transformed our digital presence and unified our customer journey across markets. Their strategy and execution rival the best global agencies.',
+            'HumTech transformed our digital presence and unified our customer journey across markets. Their strategy and execution rival the best global agencies.',
           name: 'Arif Khan',
           title: 'Chief Digital Officer, Aarong Global',
           location: 'Dhaka & Dubai',
@@ -446,7 +440,7 @@ export class HomeContentStore {
           title: 'Designing Omni-Channel Experiences for Emerging Markets',
           category: 'Case Study',
           summary:
-            'How Object Canvas Technology reimagined retail experiences with localized content and automation.',
+            'How HumTech reimagined retail experiences with localized content and automation.',
           readTime: '7 min read',
         },
         {
@@ -491,7 +485,7 @@ export class HomeContentStore {
         title: "Let's Build Something Amazing Together",
         subtitle: 'Tell us about your goals and we will curate a dedicated team for you.',
       },
-      headquarters: 'Object Canvas Technology, 123 Innovation Avenue, Tejgaon, Dhaka 1207',
+      headquarters: 'HumTech, 123 Innovation Avenue, Tejgaon, Dhaka 1207',
       phones: ['Bangladesh: +880 1234-567890', 'International: +1 415-555-0198'],
       emails: [
         { label: 'Business', value: 'hello@humtech.academy' },

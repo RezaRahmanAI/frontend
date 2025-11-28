@@ -1,4 +1,4 @@
-# Object Canvas Technology
+# HumTech
 
 Premium multinational technology and academy experience built with Angular 18, Tailwind CSS, GSAP, and Lenis.
 
@@ -40,4 +40,4 @@ src/
 
 ## License
 
-Copyright © 2024 Object Canvas Technology.
+Copyright © 2024 HumTech.

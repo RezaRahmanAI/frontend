@@ -72,11 +72,11 @@ export class HomeComponent {
 
   constructor() {
     this.seo.update({
-      title: 'Object Canvas Technology | Digital Marketing, Software Development & Tech Courses in Bangladesh',
+      title: 'HumTech | Digital Marketing, Software Development & Tech Courses in Bangladesh',
       description:
         'Premium multinational technology company delivering digital marketing, software development, website building, and live tech education for Bangladesh and global markets.',
       keywords:
-        'object canvas technology, digital marketing Bangladesh, software development Dhaka, web development, tech courses, lenis gsap',
+        'HumTech, digital marketing Bangladesh, software development Dhaka, web development, tech courses, lenis gsap',
       canonical: 'https://www.humtech.academy',
     });
   }
