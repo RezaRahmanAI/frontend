@@ -11,47 +11,38 @@ export class HomeContentStore {
 
   private readonly initialHomeContent: HomeContent = {
     hero: {
-      badge: 'Premium Multinational Technology Partner',
-      title: 'Where Technology Meets Excellence',
+      badge: 'New Version 2.0 is Live',
+      title: 'Innovating the',
+      titleHighlight: 'Future',
+      titleSuffix: 'of Business',
       description:
-        'Empowering businesses worldwide with cutting-edge software, marketing, and digital experiences—while transforming careers through expert-led technology education.',
+        'Scalable software solutions designed for the modern enterprise. We help you transform your digital infrastructure with cutting-edge technology.',
       primaryCta: {
-        label: 'Start Your Project',
+        label: 'Get Started',
         routerLink: '/contact',
       },
       secondaryCta: {
-        label: 'Explore Academy',
+        label: 'Learn More',
         routerLink: '/academy',
       },
-      highlightCard: {
-        title: 'From Bangladesh to the World 🇧🇩',
-        description:
-          'Trusted by founders, enterprises, and governments across Asia, Europe, North America, the Middle East, and Australia.',
-      },
-      highlightList: [
-        'Tailored enterprise technology for global impact',
-        'Dedicated project teams aligned with your timezone',
-        'Live instructor-led courses with industry experts',
-      ],
-      video: {
-        src: '/video/hero.mp4',
-        poster:
-          'https://images.unsplash.com/photo-1526498460520-4c246339dccb?auto=format&fit=crop&w=1600&q=80',
-      },
-      featurePanel: {
-        eyebrow: 'Global Delivery Model',
-        title: 'Fortune 500 quality with local insight',
-        description:
-          'Dedicated project squads, design strategists, cloud architects, and certified instructors aligned to your timezone with daily progress rituals.',
-        metrics: [
-          { label: 'Timezone aligned', value: 'Asia · EU · NA', theme: 'accent' },
-          { label: 'Delivery Velocity', value: '2x faster GTM', theme: 'emerald' },
-        ],
-        partner: {
-          label: 'Trusted technology & academy partner',
-          description:
-            'Align business outcomes with skill transformation—our Academy trains your teams to own and scale the solutions we deliver.',
+      trustedByline: 'Trusted by 500+ companies',
+      avatars: [
+        {
+          src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC5HHtCa-xSOQuDox5ircpM2QVCiuNWliWybwOstQOXKvWs5_jEMnisgy05i-u3-cf1J0_pEswdVKHPTLqVN6KR1uU-znjUmEj0Mggpy2r9BA-eUZnwDhdjeh_ZuaNnfL5TASJolG9q8TVpem11MKoe3Ozgsqb3NZN9dr7rlgljqEBRQ8nxL7c9SgTtMeCKhOAuGrreLE8JdTR3aZTiSZWMwmOFX4qaKvQpoEYcPXpVEaMS7x0G7NDtptTZIEkxhIm5Jq4tFAhq4Ag',
+          alt: 'Portrait of a smiling woman',
         },
+        {
+          src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAyfpqFI6ek0AcDG4h5Cgo4YyHy2l_n0Bhtf6Gtw2xejbpmd74KIn36ewtTNENYG_2X02_Jx4sHX87DFcLB2x3p3AM01X0FVn_4yAsx2wwhcLD00vKvxueMC5BDwJuZVO53vxaC9TrfKhvrQw-ZcsQz6WDtki4-xWXHxBQIEzqaFML50b9pWGWqUASOLVmNf5EBdjWsgpGZY-0q-LRBzOroFx9oE_4Ui3qeyj4fZHlguKincleUfg3XWl3yhcj2CJmzREsh1oaKKMk',
+          alt: 'Portrait of a man with glasses',
+        },
+        {
+          src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBqPpINo1Y7DTEbGmwV4N7Epq-j02u2EWa8rjLAaiRb4iSTBaGRowCNlbNVeqUXYobxPm63tj0C_DGR09Oilugks-_6se4mi6hTHNcdupG-v9xC4PXE8jirUY8OgGPyQk_-A-qoeOgPKMibpzkb_ZXFQtTeVLCVmlfPZQJ61F63ZYTNtL84rF0kogGgfFs9vCLMxHWnzg_f2vZRXJllsiBz2m5dVW1TPbiLeleQS7KgDQmpWCXbp2Zxnqp7brDVEfCruBD2x5wpi9I',
+          alt: 'Portrait of a smiling man',
+        },
+      ],
+      image: {
+        src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDTNcAuNk_uvfj13yKrkRsyHfDCiB2Ywa6Hd1gZu6NmnspiKw8-9R8TjSixfc3kRaayALPJbxZQ5oHCVt0GhzfMeCQWuL5hNqNqGDY95UlDf8UaRi-qPaJgk0gFvit4YKS1wwPNsNH9w8R2cq-2K4sx2ThiLwFVufpH3eACgySe2XdCEiPzHZcHXrMdbem6cgLc1G_NXWe0JVjbEr7qeA8HjpwJk10qF0RPoz-ZmOSxSe3qXxcv3-vWlNorZaVwDAYbJMTda8HfPNY',
+        alt: 'Futuristic cyber security data visualization with blue nodes and connections',
       },
     },
     trust: {

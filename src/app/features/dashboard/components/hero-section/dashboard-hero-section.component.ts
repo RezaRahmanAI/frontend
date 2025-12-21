@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
-import { HeroContent, HeroMetric } from '../../../../core/models/home';
+import { HeroAvatar, HeroContent } from '../../../../core/models/home';
 
 @Component({
   selector: 'app-dashboard-hero-section',
@@ -15,23 +15,15 @@ import { HeroContent, HeroMetric } from '../../../../core/models/home';
 export class DashboardHeroSectionComponent {
   @Input({ required: true }) hero!: HeroContent;
 
-  protected addHighlight(): void {
-    this.hero.highlightList.push('');
+  protected addAvatar(): void {
+    this.hero.avatars.push(this.createAvatar());
   }
 
-  protected removeHighlight(index: number): void {
-    this.hero.highlightList.splice(index, 1);
+  protected removeAvatar(index: number): void {
+    this.hero.avatars.splice(index, 1);
   }
 
-  protected addMetric(): void {
-    this.hero.featurePanel.metrics.push(this.createMetric());
-  }
-
-  protected removeMetric(index: number): void {
-    this.hero.featurePanel.metrics.splice(index, 1);
-  }
-
-  private createMetric(): HeroMetric {
-    return { label: '', value: '', theme: 'accent' };
+  private createAvatar(): HeroAvatar {
+    return { src: '', alt: '' };
   }
 }
