@@ -35,3 +35,45 @@
     </div>
   </div>
 </section>
+
+<section class="section-padding bg-slate-50">
+  <div class="container-wide">
+    <div appScrollReveal>
+      <app-section-header
+        [eyebrow]="aboutContent().team.header.eyebrow"
+        [title]="aboutContent().team.header.title"
+        [subtitle]="aboutContent().team.header.subtitle"
+        align="center"
+      ></app-section-header>
+    </div>
+    <div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <div
+        *ngFor="let member of aboutContent().team.members"
+        class="rounded-3xl border border-slate-100 bg-white p-6 shadow-sm"
+        appScrollReveal
+      >
+        <div class="flex items-center gap-4">
+          <img
+            class="h-16 w-16 rounded-2xl object-cover"
+            [src]="member.image.src"
+            [alt]="member.image.alt"
+          />
+          <div>
+            <h3 class="text-lg font-semibold text-primary">{{ member.name }}</h3>
+            <p class="text-sm font-medium text-slate-500">{{ member.role }}</p>
+            <p class="text-xs text-slate-400">{{ member.location }}</p>
+          </div>
+        </div>
+        <p class="mt-4 text-sm text-slate-600">{{ member.bio }}</p>
+        <div class="mt-4 flex flex-wrap gap-2">
+          <span
+            *ngFor="let specialty of member.specialties"
+            class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-600"
+          >
+            {{ specialty }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

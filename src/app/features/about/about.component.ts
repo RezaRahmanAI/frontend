@@ -1,5 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+
+import { AboutContentStore } from '../../core/services/about-content.store';
 import { SectionHeaderComponent } from '../../shared/components/section-header/section-header.component';
 import { ScrollRevealDirective } from '../../shared/directives/scroll-reveal.directive';
 
@@ -12,6 +14,10 @@ import { ScrollRevealDirective } from '../../shared/directives/scroll-reveal.dir
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AboutComponent {
+  private readonly content = inject(AboutContentStore);
+
+  protected readonly aboutContent = this.content.aboutContent;
+
   protected readonly values = [
     {
       title: 'Human First Innovation',
