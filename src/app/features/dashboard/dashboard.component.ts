@@ -2,8 +2,11 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 
+import { AboutContent } from '../../core/models/about';
 import { HomeContent } from '../../core/models/home';
+import { AboutContentStore } from '../../core/services/about-content.store';
 import { HomeContentStore } from '../../core/services/home-content.store';
+import { DashboardAboutTeamSectionComponent } from './components/about-team-section/dashboard-about-team-section.component';
 import { DashboardAcademySectionComponent } from './components/academy-section/dashboard-academy-section.component';
 import { DashboardCaseStudiesSectionComponent } from './components/case-studies-section/dashboard-case-studies-section.component';
 import { DashboardClosingCtasSectionComponent } from './components/closing-ctas-section/dashboard-closing-ctas-section.component';
@@ -37,6 +40,7 @@ import { DashboardTrustSectionComponent } from './components/trust-section/dashb
     DashboardInsightsSectionComponent,
     DashboardClosingCtasSectionComponent,
     DashboardContactSectionComponent,
+    DashboardAboutTeamSectionComponent,
   ],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css',
@@ -44,6 +48,7 @@ import { DashboardTrustSectionComponent } from './components/trust-section/dashb
 })
 export class DashboardComponent {
   protected draft: HomeContent;
+  protected aboutDraft: AboutContent;
   protected readonly sectionNav = [
     { id: 'hero', label: 'Hero Section' },
     { id: 'trust', label: 'Trust & Stats' },
@@ -58,10 +63,16 @@ export class DashboardComponent {
     { id: 'insights', label: 'Insights' },
     { id: 'closing-ctas', label: 'Closing CTAs' },
     { id: 'contact', label: 'Contact' },
+    { id: 'about-team', label: 'About Team' },
   ];
 
-  constructor(private readonly content: HomeContentStore, private readonly router: Router) {
+  constructor(
+    private readonly content: HomeContentStore,
+    private readonly aboutContent: AboutContentStore,
+    private readonly router: Router
+  ) {
     this.draft = this.clone(this.content.homeContent());
+    this.aboutDraft = this.clone(this.aboutContent.aboutContent());
 
     this.router.events.subscribe((event) => {
       if ('urlAfterRedirects' in event && event.urlAfterRedirects.includes('#')) {
@@ -78,6 +89,16 @@ export class DashboardComponent {
   protected resetHomeContent(): void {
     this.content.resetHomeContent();
     this.draft = this.clone(this.content.homeContent());
+  }
+
+  protected saveAboutContent(): void {
+    this.aboutContent.setAboutContent(this.clone(this.aboutDraft));
+    this.aboutDraft = this.clone(this.aboutContent.aboutContent());
+  }
+
+  protected resetAboutContent(): void {
+    this.aboutContent.resetAboutContent();
+    this.aboutDraft = this.clone(this.aboutContent.aboutContent());
   }
 
   protected scrollToSection(sectionId: string): void {

@@ -14,7 +14,7 @@
           class="inline-flex items-center gap-2 rounded-full border border-slate-200 px-5 py-2 text-sm font-semibold text-slate-700 transition hover:border-primary hover:text-primary"
           (click)="resetHomeContent()"
         >
-          Reset to Defaults
+          Reset Home Content
         </button>
         <button
           type="button"
@@ -22,6 +22,20 @@
           (click)="saveHomeContent()"
         >
           Save Home Content
+        </button>
+        <button
+          type="button"
+          class="inline-flex items-center gap-2 rounded-full border border-slate-200 px-5 py-2 text-sm font-semibold text-slate-700 transition hover:border-primary hover:text-primary"
+          (click)="resetAboutContent()"
+        >
+          Reset About Content
+        </button>
+        <button
+          type="button"
+          class="inline-flex items-center gap-2 rounded-full bg-slate-900 px-5 py-2 text-sm font-semibold text-white shadow-lg shadow-slate-900/20 transition hover:-translate-y-0.5"
+          (click)="saveAboutContent()"
+        >
+          Save About Content
         </button>
       </div>
     </header>
@@ -80,6 +94,7 @@
             [closingCtas]="draft.closingCtas"
           ></app-dashboard-closing-ctas-section>
           <app-dashboard-contact-section [contact]="draft.contact"></app-dashboard-contact-section>
+          <app-dashboard-about-team-section [team]="aboutDraft.team"></app-dashboard-about-team-section>
         </form>
       </div>
     </div>
